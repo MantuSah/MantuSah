@@ -1,0 +1,47 @@
+body {
+   padding:0;
+   margin:0;
+}
+.bg{
+    background:#00fdff               
+    url(https://dl.dropbox.com/s/wawqebntz9ix3na/IMG_20200413_083002.jpg?dl=0);
+    height:95vh;
+    background-size:cover;
+    background-position:0 0;
+    background-repeat:repeat-x;
+    animation:animate 4s linear infinite;  
+}
+.car{
+    position:absolute;
+    bottom:55px;
+    height:100px; 
+}
+  /*  transition:rotate(180deg) .1s linear;
+.car:hover{
+    rotate(180deg) 
+} */
+@keyframes animate
+{
+   from{background-position:0 0;} 
+   to  {background-position:100% 0;}
+}
+.wheel{
+    position:absolute;
+    bottom:50px;
+    transform:translateX(-10%);
+    left:25px;}
+.wheel img{
+    width:51px;
+    height:51px;
+    animation:wheel 1s linear infinite;
+}
+#back{
+    position:relative;
+    left:95px;  
+}
+@keyframes wheel
+{
+    100%{
+        transform:rotate(360deg);
+    }
+}
